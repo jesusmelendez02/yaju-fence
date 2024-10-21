@@ -1,13 +1,241 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <div>
+          <a href=""><img src="assets/images/Yaju-Fence-Logo.svg" alt="Yaju Fence Logo" class="logo"></a>
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+            aria-expanded="false">Menu</span></button>
+        <nav>
+          <ul role="list" id="primary-navigation" data-visible="false"
+            class="primary-navigation nav-list underline-indicators flex uppercase">
+            <li class="active"><a class="text-neutral-800 fw-semiBold" href="#">Home</a></li>
+            <li class=""><a class="text-neutral-800 fw-semiBold" href="#">Services</a></li>
+            <!-- <li><a href="#">About Us</a></li> -->
+            <li class=""><a class="text-neutral-800 fw-semiBold" href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div>
+          <button class="button display-sm-none display-md-inline-flex">Free Estimate</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="fullscreen-video-container">
+        <video autoplay muted loop>
+          <source src="assets/Videos/heroBackgroundVideo_Desktop_YajuFence.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+          <h1 class="primary-heading text-neutral-300 fw-bold">RELIABLE, HIGH-QUALITY FENCING SOLUTIONS IN ORLANDO <br>TAILORED FOR
+            YOUR HOME OR
+            BUSINESS!</h1>
+          <h2 class="text-neutral-300 fw-semiBold margin-top-sm">Family-Owned. Expertly Installed. Over 10 Years of experience.
+          </h2>
+          <button class="button | margin-top-md">GET A FREE QUOTE</button>
+        </div>
+      </div>
+      <div class="bg-neutral-300">
+        <p class="container-sm padding-block-sm text-align-center fw-semiBold ">“Yaju Fence has proudly served Florida for over 10 years, offering a wide
+          range of fencing options including
+          vinyl, wood, chain link, and aluminum. Let our experienced team help you choose the ideal fence for your
+          property.”</p>
+      </div>
+    </section>
+
+    <section class="padding-block-lg">
+      <div class="container">
+        <h2 class="secondary-heading">OUR FENCING SERVICES</h2>
+        <div class="even-columns margin-top-lg">
+
+          <div class="card">
+            <img src="" alt="">
+            <div class="card-content">
+              <h3 class="fw-semiBold">VINYL FENCING</h3>
+              <p>Durable, low-maintenance fence that withstands Florida’s harsh weather and enhances your property’s
+                style.</p>
+              <div class="button card-cta"><button>GET A QUOTE</button><a href=""></a></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="" alt="">
+            <div class="card-content">
+              <h3 class="fw-semiBold">LINK FENCING</h3>
+              <p>Affordable and reliable, it isperfect for securing residential and commercial properties.</p>
+              <div class="card-cta"><button>GET A QUOTE</button><a href=""></a></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="" alt="">
+            <div class="card-content">
+              <h3 class="fw-semiBold">ALUMINUM FENCING</h3>
+              <p>Elegant and durable, it offers beauty and security while requiring minimal maintenance.</p>
+              <div class="card-cta"><button>GET A QUOTE</button><a href=""></a></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="" alt="">
+            <div class="card-content">
+              <h3 class="fw-semiBold">WOOD FENCING</h3>
+              <p>Classic and timeless, it is built with high-quality cedar for long-lasting privacy and beauty.</p>
+              <div class="card-cta"><button>GET A QUOTE</button><a href=""></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="padding-block-800">
+      <div class="container">
+        <h2 class="secondary-heading">WHY CHOOSE YAJU FENCE</h2>
+        <div class="even-columns">
+
+          <section>
+            <svg></svg>
+            <h3>We install national products that offer a lifetime warranty.</h3>
+          </section>
+
+          <section>
+            <svg></svg>
+            <h3>We install national products that offer a lifetime warranty.</h3>
+          </section>
+
+          <section>
+            <svg></svg>
+            <h3>All fence installations come standard with a one-year workmanship warranty.</h3>
+          </section>
+
+          <section>
+            <svg></svg>
+            <h3>Competitive pricing.</h3>
+          </section>
+
+          <section>
+            <svg></svg>
+            <h3>Free Estimates.</h3>
+          </section>
+        </div>
+    </section>
+
+    <section class="CTA | bg-neutral-400 padding-block-800">
+      <div class="container">
+        <h2><button>START YOUR PROJECT</button></h2>
+      </div>
+    </section>
+
+    <section class="bg-neutral-300 padding-block-400">
+      <div class="container">
+        <h2 class="secondary-heading">LET OUR RESULTS DO THE TALKING</h2>
+        <div class="even-columns">
+          <figure>
+            <img src="" alt="">
+            <figcaption>Brief description of the project</figcaption>
+          </figure>
+          <figure>
+            <img src="" alt="">
+            <figcaption>Brief description of the project</figcaption>
+          </figure>
+          <figure>
+            <img src="" alt="">
+            <figcaption>Brief description of the project</figcaption>
+          </figure>
+          <figure>
+            <img src="" alt="">
+            <figcaption>Brief description of the project</figcaption>
+          </figure>
+          <figure>
+            <img src="" alt="">
+            <figcaption>Brief description of the project</figcaption>
+          </figure>
+          <figure>
+            <img src="" alt="">
+            <figcaption>Brief description of the project</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-neutral-400 padding-block-400">
+      <div class="container">
+        <h2 class="secondary-heading">READY TO SECURE YOUR PROPERTY?</h2>
+        <div class="even-columns">
+          <div>
+            <img src="" alt="">
+            <p>Contact us to schedule a consultation with our expert team. Let us help you find the perfect fencing
+              solution for your home or business.</p>
+            <div>
+              <div>
+                <div>
+                  <svg></svg>
+                  <a href=""></a>
+                </div>
+
+                <div>
+                  <svg></svg>
+                  <a href=""></a>
+                </div>
+              </div>
+
+              <div>
+                <svg></svg>
+                <svg></svg>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <form action="">
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="even-columns">
+
+          <section>
+            <h2>CONTACT US</h2>
+            <div>
+              <svg></svg>
+              <a href=""></a>
+            </div>
+
+            <div>
+              <svg></svg>
+              <a href=""></a>
+            </div>
+          </section>
+
+          <section>
+            <h2>FOLLOW US</h2>
+          </section>
+
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
