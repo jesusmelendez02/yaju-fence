@@ -41,16 +41,20 @@
           <source src="assets/Videos/heroBackgroundVideo_Desktop_YajuFence.mp4" type="video/mp4">
         </video>
         <div class="container">
-          <h1 class="primary-heading text-neutral-300 fw-bold">RELIABLE, HIGH-QUALITY FENCING SOLUTIONS IN ORLANDO <br>TAILORED FOR
+          <h1 class="primary-heading text-neutral-300 fw-bold">RELIABLE, HIGH-QUALITY FENCING SOLUTIONS IN ORLANDO
+            <br>TAILORED FOR
             YOUR HOME OR
-            BUSINESS!</h1>
-          <h2 class="text-neutral-300 fw-semiBold margin-top-sm">Family-Owned. Expertly Installed. Over 10 Years of experience.
+            BUSINESS!
+          </h1>
+          <h2 class="text-neutral-300 fw-semiBold margin-top-sm">Family-Owned. Expertly Installed. Over 10 Years of
+            experience.
           </h2>
           <button class="button | margin-top-md">GET A FREE QUOTE</button>
         </div>
       </div>
       <div class="bg-neutral-300">
-        <p class="container-sm padding-block-sm text-align-center fw-semiBold ">“Yaju Fence has proudly served Florida for over 10 years, offering a wide
+        <p class="container-sm padding-block-sm text-align-center fw-semiBold ">“Yaju Fence has proudly served Florida
+          for over 10 years, offering a wide
           range of fencing options including
           vinyl, wood, chain link, and aluminum. Let our experienced team help you choose the ideal fence for your
           property.”</p>
@@ -106,31 +110,31 @@
     <section class="padding-block-xlg">
       <div class="container">
         <h2 class="secondary-heading">WHY CHOOSE YAJU FENCE</h2>
-        <div class="even-columns">
+        <div class="grid text-align-center">
 
           <section>
-            <svg></svg>
-            <h3>We install national products that offer a lifetime warranty.</h3>
+            <img src="assets/images/icon-national-products.svg" alt="" class="icon">
+            <h3 class="short-pharagraph">We install national products that offer a lifetime warranty.</h3>
           </section>
 
           <section>
-            <svg></svg>
-            <h3>We install national products that offer a lifetime warranty.</h3>
+            <img src="assets/images/icon-customer-service.svg" alt="" class="icon">
+            <h3 class="short-pharagraph">We are dedicated to providing first-class customer service.</h3>
           </section>
 
           <section>
-            <svg></svg>
-            <h3>All fence installations come standard with a one-year workmanship warranty.</h3>
+            <img src="assets/images/icon-warranty.svg" alt="" class="icon">
+            <h3 class="short-pharagraph">All fence installations come standard with a one-year workmanship warranty.</h3>
           </section>
 
           <section>
-            <svg></svg>
-            <h3>Competitive pricing.</h3>
+            <img src="assets/images/icon-competitive-pricing.svg" alt="" class="icon">
+            <h3 class="short-pharagraph">Competitive pricing.</h3>
           </section>
 
           <section>
-            <svg></svg>
-            <h3>Free Estimates.</h3>
+            <img src="assets/images/icon-estimates.svg" alt="" class="icon">
+            <h3 class="short-pharagraph">Free Estimates.</h3>
           </section>
         </div>
     </section>
@@ -183,10 +187,11 @@
         <div class="even-columns margin-top-lg">
           <div>
             <img src="assets/images/vinyl-fence-cta.jpg" alt="">
-            <p class="margin-top-md">Contact us to schedule a consultation with our expert team. Let us help you find the perfect fencing
+            <p class="margin-top-md">Contact us to schedule a consultation with our expert team. Let us help you find
+              the perfect fencing
               solution for your home or business.</p>
-            
-              <div class="flex justify-content margin-top-lg">
+
+            <div class="flex justify-content margin-top-lg">
               <div>
                 <div class="flex ">
                   <img src="assets/images/Icon feather-mail.svg" alt="">
@@ -206,44 +211,91 @@
             </div>
           </div>
 
-          <div>
-            <form action="">
-
+          <div class="app">
+            <form id='contact-form' class='contact-form'>
+              <label for="name">Name*</label>
+              <input placeholder='Enter your name' type='text' name='name' id='name' required={true} />
+              <label for="email">Email*</label>
+              <input placeholder='Enter your email address' type='email' name='email' id='email' required={true} />
+              <label for="phone">Phone</label>
+              <input placeholder='(xxx) xxx-xxxx' type='tel' name='phone' id='phome' required={false} />
+              <label for="address">Address</label>
+              <input placeholder='Enter your address or project location' type='address' name='address' id='address'
+                required={false} />
+              <fieldset>
+                <legend>Fence type</legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" name='fenceType' id='vinyl' value='vinyl' />
+                    <label for="vinyl">Vinyl</label>
+                    <span class="checkmark"></span>
+                  </li>
+                  <li>
+                    <input type="checkbox" name='fenceType' id='wood' value='wood' />
+                    <label for="wood">Wood</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name='fenceType' id='aluminum' value='aluminum' />
+                    <label for="aluminum">Aluminum</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name='fenceType' id='chainLink' value='chainLink' />
+                    <label for="chainLink">Chain link</label>
+                    
+                  </li>
+                  <li>
+                    <input type="checkbox" name='fenceType' id='notSure' value='notSure' />
+                    <label for="notSure">Not sure</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <label for="message">Project details</label>
+              <textarea rows="3"
+                placeholder='Tell us more about your project (e.g., fence length, style preferences, any obstacles)'
+                name='message' id='message'>
+              </textarea>
+              <button type='submit'>REQUEST A FREE QUOTE</button>
             </form>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="bg-neutral-800">
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+
+    </div>
+    <!-- Footer -->
+    <footer class="bg-neutral-900">
       <div class="container padding-block-lg text-neutral-300">
         <div class="even-columns">
 
-         <div>
-          <ul class="fw-semiBold">
-            <a href="" class="link"> 
-              <li>Services</li>
-            </a>
-            <a href="" class="link"> 
-              <li>About us</li>
-            </a>
-            <a href="" class="link"> 
-              <li>Contact us</li>
-            </a>
-          </ul> 
-         </div> 
+          <div>
+            <ul class="fw-semiBold">
+              <a href="" class="link">
+                <li>Services</li>
+              </a>
+              <a href="" class="link">
+                <li>About us</li>
+              </a>
+              <a href="" class="link">
+                <li>Contact us</li>
+              </a>
+            </ul>
+          </div>
 
           <section>
             <h2 class="fw-semiBold">CONTACT US</h2>
             <div class="flex justify-content margin-top-lg">
               <div>
-                <div class="flex ">
-                  <img src="assets/images/Icon feather-mail.svg" alt="">
+                <div class="flex">
+                  <img src="assets/images/Icon feather-mail-white.svg" alt="">
                   <a href="mailto:info@yajufence.com" class="link">INFO@YAJUFENCE.COM</a>
                 </div>
 
                 <div class="flex margin-top-md">
-                  <img src="assets/images/Icon feather-phone-call.svg" alt="">
+                  <img src="assets/images/Icon feather-phone-call-white.svg" alt="">
                   <a href="tel:321-947-4253" class="link">(321) 947-4253</a>
                 </div>
               </div>
@@ -252,13 +304,13 @@
           <section>
             <h2 class="fw-semiBold">FOLLOW US</h2>
             <div class="flex vertical-align-start horizontal-align-end">
-              <a href=""><img src="assets/images/Icon feather-instagram.svg" alt=""></a>
-              <a href=""></a><img src="assets/images/Icon feather-facebook.svg" alt=""></a>
+              <a href=""><img src="assets/images/Icon feather-instagram-white.svg" alt=""></a>
+              <a href=""></a><img src="assets/images/Icon feather-facebook-white.svg" alt=""></a>
             </div>
-          </div>
-          </section>
-
         </div>
+        </section>
+
+      </div>
       </div>
     </footer>
   </main>

@@ -28,11 +28,11 @@
   --clr-accent-300: hsl(43, 100%, 50%);
   --clr-accent-400: hsl(36, 100%, 50%);
 
-  --clr-neutral-100: hsl(60, 100%, 99%);
-  --clr-neutral-300: hsl(43, 30%, 95%);
-  --clr-neutral-400: hsl(43, 16%, 92%);
-  --clr-neutral-700: hsl(37, 12%, 61%);
-  --clr-neutral-800: hsl(35, 100%, 6%);
+  --clr-neutral-100: #fffffa;
+  --clr-neutral-300: #F7F5F0;
+  --clr-neutral-400: #EDEBE6;
+  --clr-neutral-700: #807C73;
+  --clr-neutral-800: #1f1200;
   --clr-neutral-900: #2c2a26;
 
   --clr-shadow: hsla(0, 0%, 0%, 0.161);
@@ -133,6 +133,20 @@ ul
 list-style: none;
 padding: 0;
 margin: 0;
+}
+
+legend {
+  display: table;
+  padding: 0;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  min-width: 0;
+  padding: 0.01em 0 0 0;
+}
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell;
 }
 
 /* Set core root defaults */
@@ -326,6 +340,14 @@ button {
 .grid {
   display: grid;
   gap: var(--gap, 1.25em);
+  row-gap: var(--row-gap, 3.75rem);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .grid-container {
@@ -342,6 +364,10 @@ button {
     grid-template-columns: repeat(auto-fit,19rem);
     justify-content: center;
     gap: 1.25em;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -611,3 +637,157 @@ body {
   margin-top: .5rem;
   margin-bottom: 2rem;
 }
+
+
+
+/* contact form */
+
+.app {
+  font-family: var(--ff-primary), sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-neutral-900);
+  padding: 1.25rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form>label,
+legend {
+  /* background-color: var(--clr-neutral-800); */
+  color: var(--clr-neutral-700);
+  font-size: var(--fs-form-label);
+  font-weight: var(--fw-extraBold);
+  color: var(--basecolor);
+  text-transform: uppercase;
+  padding-left: .3125rem;
+  margin-bottom: .25rem;
+}
+
+.contact-form>input {
+  border: none;
+  border-radius: .3125rem;
+  background-color: var(--clr-neutral-800);
+  color: var(--clr-neutral-300);
+  font-size: 1rem;
+  padding: .75rem 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form>input:focus, 
+.contact-form>textarea:focus {
+  outline: none;
+  border: 3px solid var(--clr-accent-300);
+}
+
+.contact-form ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form li {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  text-transform: uppercase;
+}
+
+.contact-form input[type="checkbox"] {
+  accent-color: var(--clr-neutral-900);
+}
+
+/* .contact-form input[type="checkbox"] {
+  display: none;
+  width: 1.25rem;
+  height: auto;
+  accent-color: blue;
+  aspect-ratio: 1/1;
+  background-color: var(--clr-neutral-900);
+  border-radius: .125rem;
+  cursor: pointer;
+}
+
+.contact-form li > label {
+  display: flex;
+  cursor: pointer;
+  padding-left: .25rem;
+  margin-right: .75rem;
+}
+
+.contact-form li > label::before {
+  content: "";
+  display: flex;
+  width: 1.25rem;
+  height: 1.25rem;
+  
+  background-color: var(--clr-neutral-900);
+  }
+
+input[type=checkbox]:checked + label:before {
+  background-image: url(assets/images/Icon\ feather-x-light.svg);
+  background-size: .75rem; 
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-content: center;
+} */
+
+
+
+
+.contact-form>textarea {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--clr-neutral-800);
+  color: var(--clr-neutral-100);
+  padding: .75rem 0.5rem;
+  resize: none;
+  
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--clr-neutral-700);
+}
+
+.contact-form>button {
+  display: inline-flex;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: .75rem 0.5rem;
+  margin-top: 1.25rem;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-button);
+  line-height: 1;
+  background: linear-gradient(0.25turn, var(--clr-accent-400), var(--clr-accent-300));
+  box-shadow: -0.25em 0 0.25em var(--clr-shadow);
+}
+
+
+/* Choose Us */
+
+.icon {
+  height: 5rem;
+  width: auto;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+}
+
+.short-pharagraph {
+  width: 25ch;
+  margin-inline: auto;
+}
+
+/* Modal */
+
