@@ -58,7 +58,8 @@
 
 
   --fs-body: var(--fs-300);
-  --fs-primary-heading: var(--fs-900);
+  --fs-title: var(--fs-900);
+  --fs-subtitle: var(--fs-600);
   --fs-secondary-heading: var(--fs-800);
   --fs-tertiary-heading: var(--fs-400);
   --fs-form-label: var(--fs-200);
@@ -239,13 +240,16 @@ button {
 
 .uppercase { text-transform: uppercase; }
 
-.content-align-center {place-items: center;}
+.content-align-center {margin: 0 auto;}
 
-.primary-heading {
-  font-size: var(--fs-primary-heading);
+.title {
+  font-size: var(--fs-title);
   line-height: 1.25;
 }
 
+.subtitle {
+  font-size: var(--fs-subtitle);
+}
 .secondary-heading {
   font-size: var(--fs-secondary-heading);
   font-weight: var(--fw-bold);
@@ -298,7 +302,7 @@ button {
 
 .even-columns {
   display: grid;
-  gap: 1.25rem; 
+  gap: 5rem 
 }
 
 @media (min-width: 30em) {
@@ -312,23 +316,6 @@ button {
 
 .horizontal-align-start { align-content: start; }
 .justify-content { justify-content: space-between; }
-/* 
-.even-columns {
-  display: grid;
-  gap: 1.25rem;
-}
-
-@media (min-width: 750px) {   
-  .even-columns {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 1280px) {
-  .even-columns {
-    grid-template-columns: repeat(4, 1fr);
-  }
-} */
 
 .flex {
   display: flex;
@@ -344,11 +331,6 @@ button {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.grid > * {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 .grid-container {
   display: grid;
@@ -366,9 +348,6 @@ button {
     gap: 1.25em;
   }
 
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 @media (min-width: 1280px) {
@@ -422,14 +401,6 @@ button {
   }
 }
 
-
-.gallery-layout {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
-  gap: 1.25rem; 
-  row-gap: 2.5rem;
-}
-
 /* General Styling */
 
 body {
@@ -456,7 +427,7 @@ body {
 }
 
 .button {
-  display: inline-flx;
+  display: inline-flex;
   cursor: pointer;
   text-decoration: none;
   border: 0;
@@ -593,7 +564,7 @@ body {
 .fullscreen-video-container {
   position: relative;
   height: 100vh; 
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -613,10 +584,37 @@ body {
   z-index: -1; 
 }
 
-/* card */
+/* card section */
+
+
+/* .card-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 750px) {   
+  .card-grid {
+  }
+}
+
+@media (min-width: 1280px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+} */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* display: flex;
+  flex-wrap: wrap; */
+  justify-content: center;
+  gap: 1.25rem;
+}
 
 .card {
-  /* padding-inline-end: 1.5rem; */
+  display: flex;
+  flex-direction: column;
   border-radius: .5rem;
   background-color: var(--clr-neutral-300);
   box-shadow: -0.1875em 0 0.375em var(--clr-shadow);
@@ -627,17 +625,40 @@ body {
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
   margin: 0 auto;
+
 }
 
 .card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding: 1.5rem;
 }
 
-.card-content p {
+.card-description {
+  flex-grow: 1;
   margin-top: .5rem;
   margin-bottom: 2rem;
+
+  
 }
 
+.card-cta {
+  align-self: flex-start;
+  
+}
+
+@media (max-width: 1000px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 /* contact form */
@@ -649,7 +670,6 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--clr-neutral-900);
-  padding: 1.25rem;
 }
 
 .contact-form {
@@ -777,6 +797,13 @@ textarea::placeholder {
 
 /* Choose Us */
 
+.feature-flex {
+  margin: 0 auto;
+  max-width: 62.5rem;
+  justify-content: center;
+
+}
+
 .icon {
   height: 5rem;
   width: auto;
@@ -791,3 +818,12 @@ textarea::placeholder {
 
 /* Modal */
 
+
+/* Gallery */
+.gallery-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 1.25rem; 
+  row-gap: 2.5rem;
+  /* justify-content: center; */
+}
