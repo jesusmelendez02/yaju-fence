@@ -238,6 +238,10 @@ button {
 
 .text-align-center { text-align: center; }
 
+@media (max-width: 680px) {
+  .text-align-center-mobile { text-align: center; }
+}
+
 .uppercase { text-transform: uppercase; }
 
 .content-align-center {margin: 0 auto;}
@@ -822,8 +826,9 @@ textarea::placeholder {
 /* Gallery */
 .gallery-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
   gap: 1.25rem; 
   row-gap: 2.5rem;
-  /* justify-content: center; */
+  margin: 2.5rem auto;
+  justify-content: center;
 }
