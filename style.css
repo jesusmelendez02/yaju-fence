@@ -107,7 +107,7 @@
 }
 
 
-/* Reset */
+/* Reset styling */
 
 /* Box sizing rules */
 *,
@@ -204,6 +204,10 @@ button {
   cursor: pointer;
   }
 
+/* smooth srolling */
+  html {
+    scroll-behavior: smooth;
+  }
 
 /* Utility classes */
 .visually-hidden {
