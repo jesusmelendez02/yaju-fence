@@ -28,7 +28,7 @@
           </ul>
         </nav>
         <div>
-          <button class="button display-sm-none display-md-inline-flex">Free Estimate</button>
+          <button class="button | display-sm-none display-md-inline-flex open-button" data-target="contactForm">Free Estimate</button>
         </div>
       </div>
     </div>
@@ -48,10 +48,11 @@
             YOUR HOME OR
             BUSINESS!
           </h1>
-          <h2 class="subtitle text-neutral-300 fw-semiBold margin-top-sm">Family-Owned. Expertly Installed. Over 10 Years of
+          <h2 class="subtitle text-neutral-300 fw-semiBold margin-top-sm">Family-Owned. Expertly Installed. Over 10
+            Years of
             experience.
           </h2>
-          <button class="button | margin-top-md">GET A FREE QUOTE</button>
+          <button class="button open-button | margin-top-md" data-target="contactForm">GET A FREE QUOTE</button>
         </div>
       </div>
       <div class="bg-neutral-300">
@@ -73,38 +74,186 @@
             <img src="assets/images/vinyl-fence.jpg" alt="vinyl-fence">
             <div class="card-content">
               <h3 class="fw-semiBold">VINYL FENCING</h3>
-              <p class="card-description">Durable, low-maintenance fence that withstands Florida’s harsh weather and enhances your property’s
+              <p class="card-description">Durable, low-maintenance fence that withstands Florida’s harsh weather and
+                enhances your property’s
                 style.</p>
-              <div class="button card-cta"><button>GET A QUOTE</button><a href=""></a></div>
+              <div class="card-cta">
+                <button class="button open-button" data-target="contactForm">GET A QUOTE</button>
+                <button class="open-button open-modal" data-target="modalVinyl">Learn More</button>
+              </div>
             </div>
           </div>
+
+          <dialog class="modal modal-animation" id="modalVinyl">
+            <div class="modal-grid position-relative">
+              <button autofocus class="close-button close-button-position"><img src="assets/images/Icon feather-x.svg" alt=""><span
+                  class="sr-only">Close modal</span></button>
+              <img src="assets/images/vinyl-fence.jpg" alt="vinyl-fence">
+              <div class="modal-content">
+                <h3 class="modal-heading fw-bold margin-top-md">Vinyl Fence</h3>
+                <p class="modal-description margin-top-sm">A vinyl fence is a popular and attractive option for
+                  homeowners in Florida who are looking for a durable and low-maintenance fencing solution. Made from
+                  PVC (polyvinyl chloride), vinyl fences are designed to withstand harsh weather conditions, such as
+                  heavy rain, strong winds, and intense sunlight, without fading, warping, or cracking.
+
+                  One of the key advantages of vinyl fences is that they are highly customizable, with a wide range of
+                  colors, styles, and textures available to choose from. Whether you prefer a traditional picket fence
+                  or a modern privacy fence, you can find a vinyl fence that suits your aesthetic preferences and
+                  functional needs.
+
+                  In addition to their versatility and durability, vinyl fences are also easy to clean and maintain.
+                  Unlike wood fences that require regular staining or painting, vinyl fences can be cleaned with just
+                  soap and water, making them a cost-effective and hassle-free choice for homeowners.
+
+                  If you're looking for a stylish and practical fencing solution for your Florida property, a vinyl
+                  fence could be the perfect choice. Contact us today to learn more about our vinyl fencing options and
+                  to schedule a consultation with one of our experts.
+
+                </p>
+              </div>
+            </div>
+          </dialog>
 
           <div class="card">
             <img src="assets/images/link-fence.jpg" alt="link-fence">
             <div class="card-content">
-              <h3 class="fw-semiBold ">LINK FENCING</h3>
-              <p class="card-description">Affordable and reliable, it is perfect for securing residential and commercial properties.</p>
-              <div class="button card-cta"><button>GET A QUOTE</button><a href=""></a></div>
+              <h3 class="fw-semiBold ">CHAIN LINK FENCING</h3>
+              <p class="card-description">Affordable and reliable, it is perfect for securing residential and commercial
+                properties.</p>
+              <div class="card-cta">
+                <button class="button open-button" data-target="contactForm">GET A QUOTE</button>
+                <button class="open-button open-modal" data-target="modalChain">Learn More</button>
+              </div>
             </div>
           </div>
+
+          <dialog class="modal modal-animation" id="modalChain">
+            <div class="modal-grid position-relative">
+              <button autofocus class="close-button close-button-position"><img src="assets/images/Icon feather-x.svg" alt=""><span
+                  class="sr-only">Close modal</span></button>
+              <img src="assets/images/link-fence.jpg" alt="link-fence">
+              <div class="modal-content">
+                <h3 class="modal-heading fw-bold margin-top-md">Chain Link Fence</h3>
+                <p class="modal-description margin-top-sm">A chain link fence is a popular choice for both residential
+                  and commercial properties in Florida. It is a type of fence made of galvanized steel wires woven
+                  together to form a diamond-shaped pattern. This type of fence is durable, long-lasting, and provides a
+                  clear view of the surrounding area.
+                  <br><br>
+                  Chain link fences come in various heights and gauges to accommodate different needs and applications.
+                  They can be installed with different types of posts and hardware to ensure that they are sturdy and
+                  secure. Some chain link fences come with a vinyl coating that provides additional protection against
+                  rust, corrosion, and UV rays.
+                  <br> <br>
+                  Chain link fences are easy to install and maintain, making them a cost-effective choice for many
+                  property owners. They are also versatile and can be used for a variety of purposes, including
+                  security, privacy, animal containment, and decorative purposes. They are commonly used around swimming
+                  pools, sports fields, playgrounds, and construction sites.
+                  <br><br>
+                  Overall, a chain link fence is a practical and affordable option for property owners in Florida who
+                  are looking for a reliable and low-maintenance fencing solution.
+                </p>
+              </div>
+            </div>
+          </dialog>
+
+
 
           <div class="card">
             <img src="assets/images/aluminum-fence.jpg" alt="aluminum-fence">
             <div class="card-content">
               <h3 class="fw-semiBold">ALUMINUM FENCING</h3>
-              <p class="card-description">Elegant and durable, it offers beauty and security while requiring minimal maintenance.</p>
-              <div class="button card-cta"><button>GET A QUOTE</button><a href=""></a></div>
+              <p class="card-description">Elegant and durable, it offers beauty and security while requiring minimal
+                maintenance.</p>
+              <div class="card-cta">
+                <button class="button open-button" data-target="contactForm">GET A QUOTE</button>
+                <button class="open-button open-modal" data-target="modalAluminum">Learn More</button>
+              </div>
             </div>
           </div>
+
+          <dialog class="modal modal-animation" id="modalAluminum">
+            <div class="modal-grid position-relative">
+              <button autofocus class="close-button close-button-position"><img src="assets/images/Icon feather-x.svg" alt=""><span
+                  class="sr-only">Close modal</span></button>
+              <img src="assets/images/link-fence.jpg" alt="link-fence">
+              <div class="modal-content">
+                <h3 class="modal-heading fw-bold margin-top-md">Aluminum Fence</h3>
+                <p class="modal-description margin-top-sm">Aluminum fencing is an excellent choice for both residential
+                  and commercial properties in Florida. Made from high-quality aluminum alloy, these fences are
+                  lightweight, durable, and require very little maintenance. Here are some key features of aluminum
+                  fencing that make it a popular choice for Florida homeowners:
+
+                  Durability: Aluminum fencing is known for its strength and durability, and can withstand harsh weather
+                  conditions, such as hurricanes and extreme heat, which are common in Florida.
+
+                  Low maintenance: Unlike wood fencing, which requires regular staining and sealing, aluminum fencing
+                  requires minimal maintenance. It is resistant to rust, corrosion, and fading, and can be easily
+                  cleaned with soap and water.
+                  Customizable: Aluminum fencing comes in a variety of styles and colors, making it easy to match the
+                  aesthetics of any property. It can be customized to fit any height or width, making it suitable for
+                  any size of property.
+
+                  Security: Aluminum fencing can be installed with locking mechanisms and other security features,
+                  making it an ideal choice for commercial properties and high-security areas.
+
+                  Eco-friendly: Aluminum fencing is 100% recyclable, making it an eco-friendly option for those who are
+                  concerned about the environment.
+
+                  At YAJU FENCE, we offer a wide range of aluminum fencing options to meet the specific needs of our
+                  customers in Florida. Our team of experts can help you choose the perfect style, color, and height to
+                  match your property and ensure that your fence is installed correctly and securely.
+
+                  Contact us today to learn more about our aluminum fencing options and to get a free quote.
+
+                </p>
+              </div>
+            </div>
+          </dialog>
+
+
 
           <div class="card">
             <img src="assets/images/wood-fence.jpg" alt="wood-fence">
             <div class="card-content">
               <h3 class="fw-semiBold">WOOD FENCING</h3>
-              <p class="card-description">Classic and timeless, it is built with high-quality cedar for long-lasting privacy and beauty.</p>
-              <div class="button card-cta"><button>GET A QUOTE</button><a href=""></a></div>
+              <p class="card-description">Classic and timeless, it is built with high-quality cedar for long-lasting
+                privacy and beauty.</p>
+              <div class="card-cta">
+                <button class="button open-button" data-target="contactForm">GET A QUOTE</button>
+                <button class="open-button open-modal" data-target="modalChain">Learn More</button>
+              </div>
             </div>
           </div>
+
+          <dialog class="modal modal-animation" id="modalWood">
+            <div class="modal-grid position-relative">
+              <button autofocus class="close-button close-button-position"><img src="assets/images/Icon feather-x.svg" alt=""><span
+                  class="sr-only">Close modal</span></button>
+              <img src="assets/images/link-fence.jpg" alt="link-fence">
+              <div class="modal-content">
+                <h3 class="modal-heading fw-bold margin-top-md">Chain Link Fence</h3>
+                <p class="modal-description margin-top-sm">A chain link fence is a popular choice for both residential
+                  and commercial properties in Florida. It is a type of fence made of galvanized steel wires woven
+                  together to form a diamond-shaped pattern. This type of fence is durable, long-lasting, and provides a
+                  clear view of the surrounding area.
+                  <br><br>
+                  Chain link fences come in various heights and gauges to accommodate different needs and applications.
+                  They can be installed with different types of posts and hardware to ensure that they are sturdy and
+                  secure. Some chain link fences come with a vinyl coating that provides additional protection against
+                  rust, corrosion, and UV rays.
+                  <br> <br>
+                  Chain link fences are easy to install and maintain, making them a cost-effective choice for many
+                  property owners. They are also versatile and can be used for a variety of purposes, including
+                  security, privacy, animal containment, and decorative purposes. They are commonly used around swimming
+                  pools, sports fields, playgrounds, and construction sites.
+                  <br><br>
+                  Overall, a chain link fence is a practical and affordable option for property owners in Florida who
+                  are looking for a reliable and low-maintenance fencing solution.
+                </p>
+              </div>
+            </div>
+          </dialog>
+
         </div>
       </div>
     </section>
@@ -127,7 +276,8 @@
 
           <section>
             <img src="assets/images/icon-warranty.svg" alt="" class="icon">
-            <h3 class="short-pharagraph">All fence installations come standard with a one-year workmanship warranty.</h3>
+            <h3 class="short-pharagraph">All fence installations come standard with a one-year workmanship warranty.
+            </h3>
           </section>
 
           <section>
@@ -146,7 +296,7 @@
     <!-- CTA -->
     <section class="CTA | bg-neutral-400 padding-block-lg">
       <div class="container text-align-center">
-        <h2 class="button"><button>START YOUR PROJECT</button></h2>
+        <h2 class="button open-button" data-target="contactForm"><button>START YOUR PROJECT</button></h2>
       </div>
     </section>
 
@@ -198,25 +348,31 @@
             <div class="flex justify-content margin-top-lg">
               <div>
                 <div class="flex ">
-                  <a href="mailto:info@yajufence.com" class="link"><img src="assets/images/Icon feather-mail.svg" alt=""></a>
+                  <a href="mailto:info@yajufence.com" class="link"><img src="assets/images/Icon feather-mail.svg"
+                      alt=""></a>
                   <a href="mailto:info@yajufence.com" class="link">INFO@YAJUFENCE.COM</a>
                 </div>
 
                 <div class="flex margin-top-md">
-                  <a href="tel:321-947-4253" class="link"><img src="assets/images/Icon feather-phone-call.svg" alt="">  </a>
+                  <a href="tel:321-947-4253" class="link"><img src="assets/images/Icon feather-phone-call.svg" alt="">
+                  </a>
                   <a href="tel:321-947-4253" class="link">(321) 947-4253</a>
                 </div>
               </div>
 
               <div class="flex vertical-align-start horizontal-align-end">
-                <a href="https://www.instagram.com/yajufence?igsh=MTFpYjZqZnZqdzFqMQ==" target="_blank"><img src="assets/images/Icon feather-instagram.svg" alt=""></a>
+                <a href="https://www.instagram.com/yajufence?igsh=MTFpYjZqZnZqdzFqMQ==" target="_blank"><img
+                    src="assets/images/Icon feather-instagram.svg" alt=""></a>
                 <a href=""><img src="assets/images/Icon feather-facebook.svg" alt=""></a>
               </div>
             </div>
           </div>
 
-          <div class="app">
-            <form id='contact-form' class='contact-form'>
+          <!-- form component -->
+          <div class="form-flex">
+            <form id='contact-form' class='contact-form' action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="66e81e60-4ac7-4394-9d21-90b89bb6540b">
+              <input type="hidden" name="subject" value="New Submission from conctact form">
               <label for="name">Name*</label>
               <input placeholder='Enter your name' type='text' name='name' id='name' required={true} />
               <label for="email">Email*</label>
@@ -245,7 +401,7 @@
                   <li>
                     <input type="checkbox" name='fenceType' id='chainLink' value='chainLink' />
                     <label for="chainLink">Chain link</label>
-                    
+
                   </li>
                   <li>
                     <input type="checkbox" name='fenceType' id='notSure' value='notSure' />
@@ -256,20 +412,68 @@
               <label for="message">Project details</label>
               <textarea rows="3"
                 placeholder='Tell us more about your project (e.g., fence length, style preferences, any obstacles)'
-                name='message' id='message'>
-              </textarea>
+                name='message' id='message'></textarea>
               <button type='submit'>REQUEST A FREE QUOTE</button>
             </form>
           </div>
+
         </div>
       </div>
     </section>
 
+    <!-- Form Modal -->
+    <dialog class="modal-form modal-animation" id="contactForm">
+      <div class="form-flex">
+        <button autofocus class="close-button close-form"><img src="assets/images/Icon feather-x.svg" alt=""><span
+          class="sr-only">Close</span></button>
+        <form id='contact-form' class='contact-form' action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="66e81e60-4ac7-4394-9d21-90b89bb6540b">
+          <input type="hidden" name="subject" value="New Submission from conctact form">
+          <label for="name">Name*</label>
+          <input placeholder='Enter your name' type='text' name='name' id='name' required={true} />
+          <label for="email">Email*</label>
+          <input placeholder='Enter your email address' type='email' name='email' id='email' required={true} />
+          <label for="phone">Phone</label>
+          <input placeholder='(xxx) xxx-xxxx' type='tel' name='phone' id='phome' required={false} />
+          <label for="address">Address</label>
+          <input placeholder='Enter your address or project location' type='address' name='address' id='address'
+            required={false} />
+          <fieldset>
+            <legend>Fence type</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name='fenceType' id='vinyl' value='vinyl' />
+                <label for="vinyl">Vinyl</label>
+                <span class="checkmark"></span>
+              </li>
+              <li>
+                <input type="checkbox" name='fenceType' id='wood' value='wood' />
+                <label for="wood">Wood</label>
+              </li>
+              <li>
+                <input type="checkbox" name='fenceType' id='aluminum' value='aluminum' />
+                <label for="aluminum">Aluminum</label>
+              </li>
+              <li>
+                <input type="checkbox" name='fenceType' id='chainLink' value='chainLink' />
+                <label for="chainLink">Chain link</label>
 
-    <!-- Modal -->
-    <div class="modal" id="modal">
+              </li>
+              <li>
+                <input type="checkbox" name='fenceType' id='notSure' value='notSure' />
+                <label for="notSure">Not sure</label>
+              </li>
+            </ul>
+          </fieldset>
+          <label for="message">Project details</label>
+          <textarea rows="3"
+            placeholder='Tell us more about your project (e.g., fence length, style preferences, any obstacles)'
+            name='message' id='message'></textarea>
+          <button type='submit'>REQUEST A FREE QUOTE</button>
+        </form>
+      </div>
+    </dialog>
 
-    </div>
     <!-- Footer -->
     <footer class="bg-neutral-900">
       <div class="container padding-block-lg text-neutral-300">
@@ -294,12 +498,14 @@
             <div class="flex justify-content margin-top-md">
               <div>
                 <div class="flex">
-                  <a href="mailto:info@yajufence.com" class="link"><img src="assets/images/Icon feather-mail-white.svg" alt=""></a>
+                  <a href="mailto:info@yajufence.com" class="link"><img src="assets/images/Icon feather-mail-white.svg"
+                      alt=""></a>
                   <a href="mailto:info@yajufence.com" class="link">INFO@YAJUFENCE.COM</a>
                 </div>
 
                 <div class="flex margin-top-md">
-                  <a href="tel:321-947-4253" class="link"><img src="assets/images/Icon feather-phone-call-white.svg" alt=""></a>
+                  <a href="tel:321-947-4253" class="link"><img src="assets/images/Icon feather-phone-call-white.svg"
+                      alt=""></a>
                   <a href="tel:321-947-4253" class="link">(321) 947-4253</a>
                 </div>
               </div>
@@ -308,7 +514,8 @@
           <section>
             <h2 class="fw-semiBold">FOLLOW US</h2>
             <div class="flex vertical-align-start horizontal-align-end margin-top-md">
-              <a href="https://www.instagram.com/yajufence?igsh=MTFpYjZqZnZqdzFqMQ==" target="_blank"><img src="assets/images/Icon feather-instagram-white.svg" alt=""></a>
+              <a href="https://www.instagram.com/yajufence?igsh=MTFpYjZqZnZqdzFqMQ==" target="_blank"><img
+                  src="assets/images/Icon feather-instagram-white.svg" alt=""></a>
               <a href=""><img src="assets/images/Icon feather-facebook-white.svg" alt=""></a>
             </div>
         </div>
@@ -319,7 +526,7 @@
     </footer>
   </main>
 
-  <script type="module" src="/main.js"></script>
+  <!-- <script type="module" src="/main.js"></script> -->
   <script src="main.js"></script>
 </body>
 
