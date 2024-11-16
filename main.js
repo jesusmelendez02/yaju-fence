@@ -66,6 +66,7 @@ navLinks.forEach(link => {
 // });
 
 const openModal = document.querySelectorAll(".open-button");
+const modals = document.querySelectorAll(".modal")
 
 openModal.forEach(button => {
     button.addEventListener("click", () => {
@@ -73,6 +74,7 @@ openModal.forEach(button => {
         const modal = document.getElementById(modalId);
         if(modal) {
             modal.showModal();
+            document.body.classList.add("no-scroll")
         }
     });
 });
@@ -84,6 +86,17 @@ document.querySelectorAll(".close-button").forEach(button => {
         const modal = button.closest("dialog");
         if(modal) {
             modal.close();
+            document.body.classList.remove("no-scroll");
+        }
+    });
+});
+
+// Close modal when clicking on the backdrop
+modals.forEach(modal => {
+    modal.addEventListener("click", (event) => {
+        if (event.target === modal) { 
+            modal.close();
+            document.body.classList.remove("no-scroll");
         }
     });
 });

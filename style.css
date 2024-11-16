@@ -214,6 +214,7 @@ html {
 
 .no-scroll {
   overflow: hidden;
+  height: 100%;
 }
 
 .visually-hidden {
@@ -928,6 +929,7 @@ textarea::placeholder {
   margin: auto auto;
   padding: calc(20px + 1.5625vw);
   width: 90vw;
+  max-width: 65ch;
   border: 0;
   border-radius: 10px;
   box-shadow: -0.25em 0 0.25em var(--clr-shadow);
@@ -943,7 +945,7 @@ textarea::placeholder {
 
 
 .close-button {
-  font-size: clamp(20px,6vw, 48px);
+  font-size: clamp(20px, 6vw, 36px);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -957,7 +959,7 @@ textarea::placeholder {
 
 .close-button>img {
   width: 50%;
- 
+
 }
 
 .close-button-position {
@@ -972,16 +974,29 @@ textarea::placeholder {
 
 
 @media (min-width: 1025px) {
+  .modal {
+    max-width: 150ch;
+  }
+
   .modal-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 0.75em;
   }
+
 
   .close-button-position {
-    top: 0;
-    right: 2vw;
+    position: fixed;
+    top: calc(20px + 1.5625vw);
+    right: calc(20px + 1.5625vw);
   }
 
+  .modal-description {
+    padding-right: 1.25rem;
+    margin-right: 2.5em;
+    overflow-y: scroll;
+    max-height: 400px;
+  }
 }
 
 .modal::backdrop {
@@ -994,18 +1009,6 @@ textarea::placeholder {
   text-transform: uppercase;
 }
 
-.modal-description {
-  /* padding-right: 2.5rem; */
-  margin-right: 2.5em;
-  max-height: 300px;
-  overflow: scroll;
-}
-
-@media (min-width: 1441px) {
-  .modal-description {
-    max-height: max-content;
-  }
-}
 
 /* Form modal */
 
@@ -1024,7 +1027,6 @@ textarea::placeholder {
 .close-form {
   display: flex;
   margin-left: auto;
-  margin-bottom: 1.25em;
 }
 
 
