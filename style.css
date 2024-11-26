@@ -732,7 +732,8 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
+  padding: 1.25rem;
 }
 
 .card-description {
@@ -745,13 +746,21 @@ body {
 
 .card-cta {
   display: flex;
-  /* align-self: flex-start; */
-  gap: calc(4px + 1vw);
+  align-items: center;
+  column-gap: 5%;
 }
 
-/* .card-cta > * {
-  flex-wrap: nowrap;
-} */
+.card-cta > .open-modal::after {
+  content: '';
+  display: inline-block;
+  background-image: url(assets/images/Icon\ feather-chevron-right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: .6em;
+  height: .6em;
+  margin-left: .24em;
+  vertical-align: baseline;
+}
 
 @media (max-width: 1199px) {
   .card-grid {
@@ -764,6 +773,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 /* contact form */

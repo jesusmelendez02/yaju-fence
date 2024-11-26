@@ -284,6 +284,9 @@
       </div>
     </section>
 
+
+
+
     <!-- Why Choose us -->
     <section class="padding-block-lg">
       <div class="container">
@@ -404,7 +407,9 @@
               <label for="email">Email*</label>
               <input placeholder='Enter your email address' type='email' name='email' id='email' required={true} />
               <label for="phone">Phone</label>
-              <input placeholder='(xxx) xxx-xxxx' type='tel' name='phone' id='phome' required={false} />
+              <input placeholder='(555) 555 - 5555' type='tel' name='phone' id='phone' pattern="\(\d{3}\)\s-\s\d{3}\s-\s\d{4}" 
+              maxlength="18"  aria-label="10-digit number"
+                required={false} />
               <label for="address">Address</label>
               <input placeholder='Enter your address or project location' type='address' name='address' id='address'
                 required={false} />
