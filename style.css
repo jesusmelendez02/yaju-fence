@@ -470,7 +470,6 @@ html {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-  /* added line */
   border: 0;
 }
 
@@ -684,28 +683,9 @@ body {
 /* card section */
 
 
-/* .card-grid {
-  display: grid;
-  gap: 1.25rem;
-}
-
-@media (min-width: 750px) {   
-  .card-grid {
-  }
-}
-
-@media (min-width: 1280px) {
-  .card-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-} */
-
 .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* display: flex;
-  flex-wrap: wrap; */
-  /* justify-content: center; */
   gap: 1.25rem;
 
 }
@@ -732,7 +712,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  /* padding: 1.5rem; */
   padding: 1.25rem;
 }
 
@@ -778,14 +757,6 @@ body {
 
 /* contact form */
 
-/* .form-flex {
-  font-family: var(--ff-primary), sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--clr-neutral-900);
-} */
 
 .contact-form {
   display: flex;
@@ -795,7 +766,7 @@ body {
 
 .contact-form>label,
 legend {
-  /* background-color: var(--clr-neutral-800); */
+
   color: var(--clr-neutral-700);
   font-size: var(--fs-form-label);
   font-weight: var(--fw-extraBold);
@@ -839,40 +810,6 @@ legend {
   accent-color: var(--clr-neutral-900);
 }
 
-/* .contact-form input[type="checkbox"] {
-  display: none;
-  width: 1.25rem;
-  height: auto;
-  accent-color: blue;
-  aspect-ratio: 1/1;
-  background-color: var(--clr-neutral-900);
-  border-radius: .125rem;
-  cursor: pointer;
-}
-
-.contact-form li > label {
-  display: flex;
-  cursor: pointer;
-  padding-left: .25rem;
-  margin-right: .75rem;
-}
-
-.contact-form li > label::before {
-  content: "";
-  display: flex;
-  width: 1.25rem;
-  height: 1.25rem;
-  
-  background-color: var(--clr-neutral-900);
-  }
-
-input[type=checkbox]:checked + label:before {
-  background-image: url(assets/images/Icon\ feather-x-light.svg);
-  background-size: .75rem; 
-  background-repeat: no-repeat;
-  justify-content: center;
-  align-content: center;
-} */
 
 
 
