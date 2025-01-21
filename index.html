@@ -399,7 +399,7 @@
 
           <!-- form component -->
           <div class="form-flex">
-            <form id='contact-form' class='contact-form' action="POST" data-netlify="true">
+            <form name="contact" id='contact-form' class='contact-form' action="POST" data-netlify="true">
               <input type="hidden" name="subject" value="New Submission from conctact form">
               <label for="name">Name*</label>
               <input placeholder='Enter your name' type='text' name='name' id='name' required={true} />
@@ -408,10 +408,10 @@
               <label for="phone">Phone</label>
               <input placeholder='(555) 555 - 5555' type='tel' name='phone' id='phone' pattern="\(\d{3}\)\s-\s\d{3}\s-\s\d{4}" 
               maxlength="18"  aria-label="10-digit number"
-                required={false} />
+               />
               <label for="address">Address</label>
               <input placeholder='Enter your address or project location' type='address' name='address' id='address'
-                required={false} />
+               />
               <fieldset>
                 <legend>Fence type</legend>
                 <ul>
